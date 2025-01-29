@@ -1,10 +1,6 @@
-LOAN PREDICTION![ref1]
+# LOAN PREDICTION
 
-by :
-
-Robby Aulia Tubagus
-
-Business Understanding
+## Business Understanding
 
 Upon receiving a loan application, the business must decide whether to approve the loan based on the applicant's profile. The bank's choice carries two different kinds of risks:
 
