@@ -15,8 +15,6 @@ Impact: The company loses out on a potentially lucrative customer as a result, w
 
 Objective: Using past data, create a machine learning model that predicts whether a customer's loan application will be approved or denied.
 
-Key Steps:
-
 1\. Preparing Data:
 
 This procedure makes sure the dataset is optimized by eliminating columns that don't include any useful information. it helps to create a more useful and targeted dataset for further analysis.
@@ -40,9 +38,11 @@ To guarantee accurate predictions, evaluate the model's performance using import
 A pandas DataFrame (df variable) can be used to load a dataset from a CSV file using the 
 
 pd.read_csv function. The location of the CSV file on the local computer is indicated by the file path.
+
 ```
 df = pd.read\_csv('path.csv')
 ```
+
 2\. Removing Columns with Only Missing Values:
 
 a. Using the expression df.isnull(), the function finds the columns in the DataFrame (df) when all values are absent (NaN).all(). The null_columns variable contains these columns.
@@ -67,7 +67,9 @@ Explored and transformed unique values in categorical columns. Replaced specific
 
 3\. Handling Missing Values:
 
-Explored and addressed missing values in specific columns.![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.007.png)
+Explored and addressed missing values in specific columns.
+
+![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.007.png)
 
 4\. Drop Unnecessary Columns:
 
@@ -83,7 +85,9 @@ Checked for specific conditions in numeric columns. Transformed and extracted nu
 
 6\. Feature Engineering:
 
-Created new boolean columns based on specific conditions. Cleaned and created new columns based on existing ones.![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.010.png)
+Created new boolean columns based on specific conditions. Cleaned and created new columns based on existing ones.
+
+![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.010.png)
 
 ## Explanatory Data Analysis(EDA)
 
@@ -92,7 +96,9 @@ Created new boolean columns based on specific conditions. Cleaned and created ne
 It helps us understand the linear relationships between pairs of numeric variables in a dataset Usage :
 
 a. Identifying Relationships
+
 b. Multicollinearity Detection
+
 c. Feature Selection
 
 2\. Dropping Highly Correlated Features
@@ -102,8 +108,11 @@ The process of dropping highly correlated features involves removing one of the 
 Usage :
 
 a. Improved Model Stability
+
 b. Enhanced Model Interpretability
+
 c. Reduced Overfitting
+
 d. Computational Efficiency
 
 ![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.011.png)
@@ -112,17 +121,31 @@ d. Computational Efficiency
 
 3\. Visualization :
 
-the goal is to interact with the data, discover patterns, and make informed decisions about subsequent analysis and modeling steps![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.013.jpeg)
+the goal is to interact with the data, discover patterns, and make informed decisions about subsequent analysis and modeling steps
+
+![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.013.jpeg)
 
 ## Model Development
 
 1\. Label Encoding:
 
-   Label Encoding is a technique used to convert categorical variables into numerical format, which is essential for feeding data into machine learning models. Label Encoding assumes an ordinal relationship between categories, as it assigns integers.![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.014.png)![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.015.png)![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.016.png)
+   Label Encoding is a technique used to convert categorical variables into numerical format, which is essential for feeding data into machine learning models. Label Encoding assumes an ordinal relationship between categories, as it assigns integers.
+   
+![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.014.png)
+
+![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.015.png)
+
+![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.016.png)
 
 2\. One-Hot Encoding:
 
-   One-Hot Encoding is used when dealing with categorical variables with more than two categories. It creates binary columns for each category, representing the presence or absence of that category for each observation.![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.017.png)![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.018.png)![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.019.png)
+   One-Hot Encoding is used when dealing with categorical variables with more than two categories. It creates binary columns for each category, representing the presence or absence of that category for each observation.
+   
+![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.017.png)
+
+![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.018.png)
+
+![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.019.png)
 
 3\. Standard Scaling:
 
@@ -141,25 +164,23 @@ the goal is to interact with the data, discover patterns, and make informed deci
 
 1\. Performance Measurement
 
-![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.022.png) ![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.023.png)
+![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.022.png) 
+
+![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.023.png)
 
 ![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.024.png)
 
 
 2\. cross-validation:
 
-a. Its primary purpose is to assess how well a model will generalize to an independent dataset
+Its primary purpose is to assess how well a model will generalize to an independent dataset
 
 ![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.025.png)
 
 3\. Output summarization
 
-1. Model Selection:
-   1. Considering the metrics, Random Forest and XGBoost appear promising for predicting loan default.
-1. Confidence in Model:
+a. Model Selection: Considering the metrics, Random Forest and XGBoost appear promising for predicting loan default.
 
-i. The models demonstrate strong accuracy and balanced precision-recall trade-offs, instilling 
-
-confidence in their ability to make reliable predictions.
+b. Confidence in Model: The models demonstrate strong accuracy and balanced precision-recall trade-offs, instilling  confidence in their ability to make reliable predictions.
 
 
