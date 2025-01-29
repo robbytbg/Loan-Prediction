@@ -133,8 +133,6 @@ the goal is to interact with the data, discover patterns, and make informed deci
    
 ![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.014.png)
 
-![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.015.png)
-
 ![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.016.png)
 
 2\. One-Hot Encoding:
@@ -144,8 +142,6 @@ the goal is to interact with the data, discover patterns, and make informed deci
 ![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.017.png)
 
 ![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.018.png)
-
-![](https://github.com/robbytbg/Loan-Prediction/blob/main/related%20images/Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.019.png)
 
 3\. Standard Scaling:
 
