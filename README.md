@@ -13,7 +13,7 @@ Impact: Should the applicant default, this could result in monetary loss for the
 
 predicts that the applicant would default and be rejected.
 
-Impact: The company loses out on a potentially lucrative customer as a result, which causes a decline in business.![ref2]
+Impact: The company loses out on a potentially lucrative customer as a result, which causes a decline in business.
 
 ## Business Objective
 
@@ -43,14 +43,14 @@ To guarantee accurate predictions, evaluate the model's performance using import
 
 a. A pandas DataFrame (df variable) can be used to load a dataset from a CSV file using the 
 
-pd.read\_csv function. The location of the CSV file on the local computer is indicated by the file path.
-
+pd.read_csv function. The location of the CSV file on the local computer is indicated by the file path.
+```
 df = pd.read\_csv('path.csv')
-
+```
 2\. Removing Columns with Only Missing Values:
 
-a. Using the expression df.isnull(), the function finds the columns in the DataFrame (df) when all values are absent (NaN).all(). The null\_columns variable contains these columns.
-b. The DataFrame's columns containing all missing values are eliminated using the ![ref2]df.drop(null\_columns, axis=1) method. Dropping columns is specified by the axis=1 argument.
+a. Using the expression df.isnull(), the function finds the columns in the DataFrame (df) when all values are absent (NaN).all(). The null_columns variable contains these columns.
+b. The DataFrame's columns containing all missing values are eliminated using the df.drop(null_columns, axis=1) method. Dropping columns is specified by the axis=1 argument.
 
 ![](Aspose.Words.099c35ca-c154-49a0-ac1d-53091fb8b316.004.png)
 
